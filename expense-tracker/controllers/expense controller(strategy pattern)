@@ -1,0 +1,8 @@
+// /strategies/ExpenseStrategy.js
+class ExpenseStrategy {
+  calculate(expenses) {
+    throw new Error("Method must be implemented");
+  }
+}
+
+module.exports = ExpenseStrategy;
