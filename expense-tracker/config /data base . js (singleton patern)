@@ -1,0 +1,13 @@
+// /config/database.js
+let dbInstance = null;
+
+function connectDatabase() {
+  if (!dbInstance) {
+    dbInstance = {
+      connect: () => console.log("Database connected")
+    };
+  }
+  return dbInstance;
+}
+
+module.exports = connectDatabase();
