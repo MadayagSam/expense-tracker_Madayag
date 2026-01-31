@@ -1,0 +1,16 @@
+// /models/ExpenseFactory.js
+class Expense {
+  constructor(amount, category) {
+    this.amount = amount;
+    this.category = category;
+    this.date = new Date();
+  }
+}
+
+class ExpenseFactory {
+  static createExpense(category, amount) {
+    return new Expense(amount, category);
+  }
+}
+
+module.exports = ExpenseFactory;
